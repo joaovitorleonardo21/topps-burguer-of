@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topps Burguer | Hambúrgueres, Lanches e Delivery em Pendências - RN</title>
+  <meta name="description" content="Peça agora na Topps Burguer em Pendências, RN. Cardápio digital interativo com hambúrgueres, sucos, vitaminas, refrigerantes e adicionais com pedido direto pelo WhatsApp.">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Topps Burguer | Cardápio Digital e Delivery">
+  <meta property="og:description" content="Seu próximo hambúrguer favorito está aqui. Monte seu pedido e finalize direto pelo WhatsApp da Topps Burguer.">
+  <meta property="og:type" content="website">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#cardapio" class="skip-link">Ir direto para o cardápio</a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header" id="topo">
+    <div class="container header-container">
+      <a href="#topo" class="brand-link" aria-label="Topps Burguer - Página inicial">
+        <div class="header-logo-wrap">
+          <img
+            src="assets/images/logo-topps-burguer.png"
+            alt="Logo oficial da Topps Burguer"
+            class="header-logo-img"
+            onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='assets/images/logo-topps-burguer.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}"
+          >
+          <span class="logo-fallback-badge" aria-hidden="true">TB</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">TOPPS BURGUER</span>
+          <span class="brand-city">Pendências • RN</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Abrir menu de navegação"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-list" id="navMenu">
+          <li><a href="#sobre" class="nav-link">A Hamburgueria</a></li>
+          <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+          <li><a href="#contato" class="nav-link">Localização</a></li>
+          <li class="nav-mobile-cta">
+            <a
+              href="https://wa.me/5584996554600"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-sm"
+            >
+              Pedir pelo WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#cardapio" class="btn btn-outline btn-sm hide-mobile">Cardápio</a>
+        <a
+          href="https://wa.me/5584996554600"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary btn-sm hide-tablet"
+        >
+          WhatsApp
+        </a>
+        <button
+          type="button"
+          class="cart-trigger"
+          id="openCartBtn"
+          aria-label="Abrir sacola de pedidos"
+        >
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-trigger-text">Sacola</span>
+          <span class="cart-badge" id="headerCartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (APRESENTAÇÃO PRINCIPAL COM LOGO EM DESTAQUE) -->
+    <section class="hero-section">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="hero-tag">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Delivery em Pendências - RN
+          </span>
+
+          <h1 class="hero-title">
+            Seu próximo hambúrguer favorito está aqui.
+          </h1>
+
+          <p class="hero-subtitle">
+            Sabores irresistíveis, ingredientes selecionados e aquele lanche que transforma qualquer momento em uma experiência especial.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#cardapio" class="btn btn-primary btn-lg">
+              Ver cardápio
+              <svg class="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a
+              href="https://wa.me/5584996554600?text=Ol%C3%A1%2C%20Topps%20Burguer!%20Gostaria%20de%20fazer%20um%20pedido."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline btn-lg"
+            >
+              Pedir pelo WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-accent">01</span>
+              <span>Escolha seus lanches e bebidas</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-accent">02</span>
+              <span>Personalize com acréscimos</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-accent">03</span>
+              <span>Finalize direto no WhatsApp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-logo-stage">
+            <div class="hero-ring hero-ring-outer" aria-hidden="true"></div>
+            <div class="hero-ring hero-ring-inner" aria-hidden="true"></div>
+            <img
+              src="assets/images/logo-topps-burguer.png"
+              alt="Logo oficial da Topps Burguer com hambúrguer suculento em chamas"
+              class="hero-main-logo"
+              onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='assets/images/logo-topps-burguer.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}"
+            >
+            <div class="hero-logo-fallback" aria-hidden="true">
+              <span class="fallback-title">TOPPS</span>
+              <span class="fallback-sub">BURGUER</span>
+            </div>
+
+            <div class="hero-floating-card">
+              <span class="floating-label">Pedido Rápido</span>
+              <strong class="floating-value">Monte e envie pelo WhatsApp</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRESENTAÇÃO DA MARCA -->
+    <section class="brand-section" id="sobre">
+      <div class="container">
+        <div class="brand-banner reveal">
+          <div class="brand-banner-text">
+            <span class="section-kicker">A Experiência Topps Burguer</span>
+            <h2 class="section-title">Sabor marcante, pedido simples e delivery prático</h2>
+            <p class="section-description">
+              Na Topps Burguer, cada pedido é montado do seu jeito. Saboreie hambúrgueres clássicos e especiais, acompanhe com sucos naturais, vitaminas ou refrigerantes gelados e personalize seu lanche com os acréscimos disponíveis. Tudo pensado para você escolher com facilidade e enviar seu pedido direto para o nosso WhatsApp em poucos cliques.
+            </p>
+          </div>
+
+          <div class="brand-pillars">
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2c.5 3.5 3 5 3 8a3 3 0 0 1-6 0c0-1.5.5-2.5 1-3.5C8 8 6 10.5 6 14a6 6 0 0 0 12 0c0-4.5-3.5-7.5-6-12z"></path>
+                </svg>
+              </div>
+              <h3>Lanches Irresistíveis</h3>
+              <p>Hambúrgueres variados com combinações que vão do tradicional ao Matuto e Double.</p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+              <h3>Personalização Fácil</h3>
+              <p>Adicione queijo catupiry, queijo coalho, frango, calabresa, carne de sol ou bacon.</p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+              <h3>Praticidade no Delivery</h3>
+              <p>Informe seu endereço no site, revise os valores e envie tudo pronto no WhatsApp.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO COMPLETO -->
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Cardápio Oficial</span>
+          <h2 class="section-title">Escolha seus favoritos</h2>
+          <p class="section-description">
+            Toque em qualquer hambúrguer para personalizar com acréscimos ou adicione bebidas diretamente à sua sacola.
+          </p>
+        </div>
+
+        <!-- Barra de filtros e busca -->
+        <div class="menu-controls reveal">
+          <div class="category-tabs" role="tablist" aria-label="Categorias do cardápio">
+            <button type="button" class="category-tab active" data-category="all" role="tab" aria-selected="true">
+              Todos
+            </button>
+            <button type="button" class="category-tab" data-category="burgers" role="tab" aria-selected="false">
+              Hambúrgueres e Lanches
+            </button>
+            <button type="button" class="category-tab" data-category="sucos" role="tab" aria-selected="false">
+              Sucos
+            </button>
+            <button type="button" class="category-tab" data-category="vitaminas" role="tab" aria-selected="false">
+              Vitaminas
+            </button>
+            <button type="button" class="category-tab" data-category="refrigerantes" role="tab" aria-selected="false">
+              Refrigerantes
+            </button>
+            <button type="button" class="category-tab" data-category="acrescimos" role="tab" aria-selected="false">
+              Acréscimos
+            </button>
+          </div>
+
+          <div class="menu-search-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="search"
+              id="menuSearchInput"
+              class="menu-search-input"
+              placeholder="Buscar lanche, ingrediente ou bebida..."
+              aria-label="Buscar no cardápio"
+            >
+          </div>
+        </div>
+
+        <!-- Container renderizado dinamicamente pelo script.js -->
+        <div id="menuContainer" class="menu-categories-wrapper" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E CONTATO -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Onde Estamos</span>
+          <h2 class="section-title">Localização e Contato</h2>
+          <p class="section-description">
+            Faça seu pedido pelo site ou fale diretamente com a Topps Burguer para tirar dúvidas sobre entregas e atendimento.
+          </p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-card">
+            <span class="contact-badge">Atendimento Oficial</span>
+            <h3>Topps Burguer</h3>
+
+            <ul class="contact-info-list">
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-label">Endereço</span>
+                  <p class="info-value">Avenida Felix Rodrigues, Nº 314<br>Pendências - Rio Grande do Norte</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-label">Telefone e WhatsApp</span>
+                  <p class="info-value">
+                    <a href="tel:+5584996554600">(84) 99655-4600</a>
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-label">Horário, Prazo e Taxa de Entrega</span>
+                  <p class="info-value">Consulte diretamente pelo WhatsApp ao finalizar ou antes de enviar seu pedido.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-actions">
+              <a
+                href="https://wa.me/5584996554600"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                Falar no WhatsApp
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Avenida+Felix+Rodrigues+314+Pendencias+RN"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                Ver no Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-cta-panel">
+            <div class="cta-panel-inner">
+              <span class="section-kicker">Pedido 100% Online</span>
+              <h3>Pronto para montar seu lanche?</h3>
+              <p>
+                Adicione os itens à sua sacola, preencha seu endereço de entrega e clique para enviar seu pedido completo para o WhatsApp oficial da Topps Burguer.
+              </p>
+              <div class="cta-panel-actions">
+                <a href="#cardapio" class="btn btn-primary">Ir para o Cardápio</a>
+                <button type="button" class="btn btn-outline" id="contactOpenCartBtn">Abrir Minha Sacola</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img
+            src="assets/images/logo-topps-burguer.png"
+            alt="Logo Topps Burguer"
+            class="footer-logo-img"
+            onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='assets/images/logo-topps-burguer.jpg';}else{this.style.display='none';}"
+          >
+          <div>
+            <strong class="footer-title">TOPPS BURGUER</strong>
+            <span class="footer-sub">Hambúrgueres, Lanches & Delivery</span>
+          </div>
+        </div>
+        <p class="footer-address">
+          Avenida Felix Rodrigues, Nº 314 — Pendências, Rio Grande do Norte
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Atalhos</h4>
+        <ul>
+          <li><a href="#sobre">A Hamburgueria</a></li>
+          <li><a href="#cardapio">Cardápio Completo</a></li>
+          <li><a href="#contato">Localização</a></li>
+          <li>
+            <a href="https://wa.me/5584996554600" target="_blank" rel="noopener noreferrer">
+              WhatsApp Oficial: (84) 99655-4600
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-order">
+        <h4>Peça Agora</h4>
+        <p>Monte sua sacola no site e envie seu pedido direto para o nosso WhatsApp.</p>
+        <a href="#cardapio" class="btn btn-primary btn-sm">Ver Cardápio</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Topps Burguer. Todos os direitos reservados.</p>
+        <p>Pendências - Rio Grande do Norte</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BARRA MOBILE FIXA DA SACOLA (EXIBIDA QUANDO HÁ ITENS) -->
+  <div class="mobile-cart-bar" id="mobileCartBar" hidden>
+    <button type="button" class="mobile-cart-bar-btn" id="mobileCartBarBtn">
+      <span class="mobile-cart-info">
+        <strong id="mobileCartCount">0 itens</strong>
+        <span>Ver sacola e finalizar</span>
+      </span>
+      <span class="mobile-cart-total" id="mobileCartTotal">R$ 0,00</span>
+    </button>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a
+    href="https://wa.me/5584996554600"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    id="whatsappFloat"
+    aria-label="Conversar com a Topps Burguer no WhatsApp"
+    title="Pedir pelo WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16.004 3C8.833 3 3 8.832 3 16.003c0 2.293.602 4.53 1.746 6.498L3 29l6.678-1.718A12.94 12.94 0 0 0 16.004 29C23.175 29 29 23.168 29 16.003 29 8.832 23.175 3 16.004 3zm7.603 18.435c-.32.9-1.874 1.72-2.596 1.828-.664.099-1.504.14-2.426-.153-.56-.177-1.278-.414-2.196-.81-3.864-1.668-6.386-5.56-6.578-5.817-.193-.257-1.57-2.088-1.57-3.984 0-1.896.993-2.828 1.345-3.213.353-.385.77-.481 1.026-.481.256 0 .513.002.737.013.236.012.553-.09.866.662.32.771 1.09 2.666 1.186 2.859.096.193.16.418.032.675-.128.257-.192.418-.385.642-.192.225-.404.503-.577.675-.193.193-.393.402-.169.787.224.385.997 1.644 2.142 2.665 1.472 1.312 2.712 1.718 3.097 1.911.385.193.61.16.834-.096.224-.257.962-1.124 1.219-1.51.256-.385.513-.321.866-.193.352.129 2.244 1.059 2.629 1.252.385.193.641.289.737.45.096.16.096.931-.224 1.83z"></path>
+    </svg>
+  </a>
+
+  <!-- MODAL DE PERSONALIZAÇÃO DO PRODUTO (ADICIONAIS) -->
+  <div class="modal-overlay" id="addonModal" role="dialog" aria-modal="true" aria-labelledby="addonModalTitle" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">Personalizar Pedido</span>
+          <h3 id="addonModalTitle">Hambúrguer</h3>
+        </div>
+        <button type="button" class="icon-close-btn" id="closeAddonModalBtn" aria-label="Fechar janela de adicionais">
+          &times;
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-ingredients" id="addonModalIngredients"></p>
+        <div class="modal-base-price">
+          <span>Valor unitário do lanche:</span>
+          <strong id="addonModalBasePrice">R$ 0,00</strong>
+        </div>
+
+        <div class="addons-picker-header">
+          <h4>Deseja incluir acréscimos?</h4>
+          <span>Selecione a quantidade de cada adicional</span>
+        </div>
+
+        <div class="addons-picker-list" id="addonsPickerList"></div>
+
+        <div class="modal-qty-row">
+          <span>Quantidade deste lanche</span>
+          <div class="qty-control">
+            <button type="button" class="qty-btn" id="modalQtyMinus" aria-label="Diminuir quantidade">-</button>
+            <span class="qty-value" id="modalProductQty">1</span>
+            <button type="button" class="qty-btn" id="modalQtyPlus" aria-label="Aumentar quantidade">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-total-summary">
+          <span>Total deste item</span>
+          <strong id="addonModalTotalPrice">R$ 0,00</strong>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="confirmAddProductBtn">
+          Adicionar à Sacola
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA ANEXAR ACRÉSCIMO DO CARDÁPIO A UM LANCHE OU ADICIONAR AVULSO -->
+  <div class="modal-overlay" id="extraChoiceModal" role="dialog" aria-modal="true" aria-labelledby="extraChoiceTitle" hidden>
+    <div class="modal-box modal-box-sm">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">Acréscimo</span>
+          <h3 id="extraChoiceTitle">Queijo Catupiry</h3>
+        </div>
+        <button type="button" class="icon-close-btn" id="closeExtraChoiceBtn" aria-label="Fechar">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="extra-choice-desc" id="extraChoiceDesc">
+          Você já possui hambúrgueres na sacola. Deseja vincular este acréscimo a um lanche específico ou adicioná-lo separado no pedido?
+        </p>
+        <div class="extra-choice-list" id="extraChoiceList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAVETA DO CARRINHO / CHECKOUT (3 ETAPAS: SACOLA -> ENDEREÇO -> REVISÃO) -->
+  <div class="drawer-overlay" id="cartDrawerOverlay" hidden>
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span class="modal-kicker" id="drawerStepLabel">Etapa 1 de 3</span>
+          <h3 id="cartDrawerTitle">Sua Sacola</h3>
+        </div>
+        <button type="button" class="icon-close-btn" id="closeCartBtn" aria-label="Fechar sacola">
+          &times;
+        </button>
+      </div>
+
+      <!-- Indicador de etapas -->
+      <div class="checkout-steps" aria-label="Etapas do pedido">
+        <div class="step-pill active" data-step="1">1. Sacola</div>
+        <div class="step-pill" data-step="2">2. Entrega</div>
+        <div class="step-pill" data-step="3">3. Revisão</div>
+      </div>
+
+      <div class="drawer-body">
+        <!-- ETAPA 1: CARRINHO -->
+        <section class="drawer-step" id="stepCart">
+          <div id="cartItemsContainer" class="cart-items-list"></div>
+
+          <div class="cart-empty-state" id="cartEmptyState" hidden>
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h4>Sua sacola está vazia</h4>
+            <p>Explore o cardápio da Topps Burguer e adicione seus lanches, sucos, vitaminas ou refrigerantes.</p>
+            <button type="button" class="btn btn-primary" id="emptyGoToMenuBtn">Ver Cardápio</button>
+          </div>
+
+          <div class="cart-summary-box" id="cartSummaryBox">
+            <div class="summary-row">
+              <span>Subtotal dos produtos</span>
+              <strong id="cartProductsSubtotal">R$ 0,00</strong>
+            </div>
+            <div class="summary-row">
+              <span>Subtotal dos adicionais</span>
+              <strong id="cartAddonsSubtotal">R$ 0,00</strong>
+            </div>
+            <div class="summary-row summary-note">
+              <span>Taxa de entrega</span>
+              <span>A confirmar pelo WhatsApp</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Total dos itens</span>
+              <strong id="cartGrandTotal">R$ 0,00</strong>
+            </div>
+
+            <div class="cart-actions-stack">
+              <button type="button" class="btn btn-primary btn-block" id="goToAddressBtn">
+                Informar Endereço de Entrega
+              </button>
+              <div class="cart-secondary-actions">
+                <button type="button" class="btn btn-outline btn-sm" id="continueShoppingBtn">
+                  Continuar comprando
+                </button>
+                <button type="button" class="btn btn-danger-outline btn-sm" id="clearCartBtn">
+                  Limpar sacola
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ETAPA 2: FORMULÁRIO DE ENTREGA -->
+        <section class="drawer-step" id="stepAddress" hidden>
+          <form id="deliveryForm" class="delivery-form" novalidate>
+            <p class="form-intro">
+              Preencha seus dados e o endereço para entrega. Campos com <span class="required-star">*</span> são obrigatórios.
+            </p>
+
+            <div class="form-group">
+              <label for="customerName">Nome completo <span class="required-star">*</span></label>
+              <input type="text" id="customerName" name="customerName" placeholder="Ex.: João da Silva" required autocomplete="name">
+              <span class="field-error" id="error-customerName"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone">Telefone para contato (opcional, se diferente do WhatsApp)</label>
+              <input type="tel" id="customerPhone" name="customerPhone" placeholder="(84) 99999-9999" inputmode="numeric" autocomplete="tel">
+              <span class="field-error" id="error-customerPhone"></span>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="addressCep">CEP <span class="required-star">*</span></label>
+                <input type="text" id="addressCep" name="addressCep" placeholder="59500-000" inputmode="numeric" maxlength="9" required autocomplete="postal-code">
+                <span class="field-error" id="error-addressCep"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="addressCity">Cidade <span class="required-star">*</span></label>
+                <input type="text" id="addressCity" name="addressCity" placeholder="Ex.: Pendências" required autocomplete="address-level2">
+                <span class="field-error" id="error-addressCity"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="addressNeighborhood">Bairro <span class="required-star">*</span></label>
+              <input type="text" id="addressNeighborhood" name="addressNeighborhood" placeholder="Ex.: Centro" required>
+              <span class="field-error" id="error-addressNeighborhood"></span>
+            </div>
+
+            <div class="form-row-address">
+              <div class="form-group">
+                <label for="addressStreet">Rua ou avenida <span class="required-star">*</span></label>
+                <input type="text" id="addressStreet" name="addressStreet" placeholder="Ex.: Avenida Felix Rodrigues" required autocomplete="street-address">
+                <span class="field-error" id="error-addressStreet"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="addressNumber">Número <span class="required-star">*</span></label>
+                <input type="text" id="addressNumber" name="addressNumber" placeholder="Ex.: 314" required>
+                <span class="field-error" id="error-addressNumber"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="addressComplement">Complemento (opcional)</label>
+              <input type="text" id="addressComplement" name="addressComplement" placeholder="Apartamento, bloco, casa...">
+            </div>
+
+            <div class="form-group">
+              <label for="addressReference">Ponto de referência <span class="required-star">*</span></label>
+              <input type="text" id="addressReference" name="addressReference" placeholder="Ex.: Próximo à praça" required>
+              <span class="field-error" id="error-addressReference"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="orderNotes">Observações do pedido (opcional)</label>
+              <textarea id="orderNotes" name="orderNotes" rows="3" placeholder="Ex.: Retirar a cebola, entregar na portaria, interfonar ao chegar..."></textarea>
+            </div>
+
+            <div class="form-error-banner" id="formGlobalError" role="alert" hidden></div>
+
+            <div class="drawer-nav-buttons">
+              <button type="button" class="btn btn-outline" id="backToCartBtn">
+                Voltar à Sacola
+              </button>
+              <button type="submit" class="btn btn-primary" id="goToReviewBtn">
+                Revisar Pedido
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ETAPA 3: REVISÃO DO PEDIDO E ENVIO PARA O WHATSAPP -->
+        <section class="drawer-step" id="stepReview" hidden>
+          <div class="review-wrapper" id="reviewContent"></div>
+
+          <div class="whatsapp-notice" id="whatsappSentNotice" hidden>
+            <strong>WhatsApp aberto!</strong> Confira a mensagem gerada no aplicativo e toque em <strong>Enviar</strong> para concluir seu pedido diretamente com a Topps Burguer.
+          </div>
+
+          <div class="review-actions-stack">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="confirmWhatsappBtn">
+              Confirmar pedido e continuar pelo WhatsApp
+            </button>
+            <div class="drawer-nav-buttons">
+              <button type="button" class="btn btn-outline btn-sm" id="backToAddressBtn">
+                Editar Endereço
+              </button>
+              <button type="button" class="btn btn-outline btn-sm" id="reviewToCartBtn">
+                Alterar Produtos
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  <!-- NOTIFICAÇÃO TOAST -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
